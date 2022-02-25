@@ -4,8 +4,15 @@
   height: 700px;
 }
 
-img {
+.car-wrapper {
+  position: relative;
+}
+
+#car {
   width: 15%;
+  height: 100px;
+  object-fit: contain;
+  position: absolute;
 }
 
 .dir-up {
