@@ -8,6 +8,20 @@
   position: relative;
 }
 
+/*
+@keyframes move {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+offset: path("M 100 100 L 300 100 L 200 300 z") auto;
+animation: move 3s linear infinite; */
+
 #car {
   width: 15%;
   height: 100px;

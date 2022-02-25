@@ -1,7 +1,10 @@
-/* global data */
-/* exported data */
-
 var $car = document.querySelector('#car');
+
+var data = {
+  direction: 'right',
+  xCoord: 0,
+  yCoord: 0
+};
 
 function handleArrowKeys(event) {
   if (event.key === 'ArrowLeft') {
@@ -18,5 +21,14 @@ function handleArrowKeys(event) {
     data.direction = 'down';
   }
 }
+
+function moveCar(event) {
+  if (event.which === 32) {
+    data.xCoord += 10;
+    $car.style.left = data.xCoord + 'px';
+  } // setInterval
+}
+
+document.addEventListener('keydown', moveCar);
 
 document.addEventListener('keydown', handleArrowKeys);
