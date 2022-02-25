@@ -1,5 +1,7 @@
 /* exported data */
 
 var data = {
-  direction: 'right'
+  direction: 'right',
+  yCoord: 0,
+  xCoord: 0
 };
